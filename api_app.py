@@ -131,3 +131,10 @@ async def completeness_check():
     doc["output"]="Ok"
     doc["range"]={"lower":0,"upper":100}
     return doc
+
+@app.post("/concordanceCheck")
+async def concordance_check():
+    doc={}
+    doc["output"]="Ok"
+    doc["range"]={"lower":0,"upper":100}
+    return doc
