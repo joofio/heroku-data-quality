@@ -100,11 +100,11 @@ async def root(request:Request):
 @app.post("/CorrectnessCheck",response_model=Evaluation)
 async def quality_check(input: Input):
     sel=df[df["column"]==input.column]
-    print(sel)
+   # print(sel)
     q1=sel["q1"].values[0]
     q3=sel["q3"].values[0]
     iqr=sel["iqr"].values[0]
-    print(q1,q3,iqr)
+    #print(q1,q3,iqr)
     output,l,u=checkoutlier(input.value,iqr,q1,q3)
     label="Ok"
 

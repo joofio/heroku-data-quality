@@ -1,42 +1,67 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Home </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
 <h1>Data Quality</h1>
-<table>
+<table class="table is-striped">
+  <thead>
     <tr>      <th>Domain</th>
-
-      <th>Item</th>
       <th>Definition</th>
+
+      <th>Measure</th>
       <th>TODOS</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
         <td>Comparability</td>
 
-      <td> </td>
       <td></td>
+      <td><ul><li>Comparison of Database Population to a Standard Population   </li><li>        Concordance of Test Conditions
+      </li></ul>
+
+           </td>
+
       <td></td>
     </tr>
     <tr>
       <td>Completeness</td>
       <td></td>
 
-      <td></td>
+      <td><ul><li>Comparison of EHR data with a gold standard was by far the most frequently used method for assessing correctness.</li>
+      <li>  These gold standards included: paper records;12e18 38 40 41 information supplied by patients through interviews,19 20 36 42 questionnaires,21 43 data review,22 23 25 44 or direct data entry;37 clinical encounters with patients;26 28 45 information presented by trained standard patients;29 30 automatically recorded data;46 contact with the treating physician;31 39 47 and alternative data sources from which information matching EHR elements were abstracted.32 33
+        look at agreement between elements within the EHR. Usually this involved verifying a diagnosis by looking at associated procedures, medications, or laboratory values.</li>
+      <li>Sensitivity</li>
+      <li>        "Recording of Blood Pressure among Patients Requiring a Blood Pressure Measurement"
+      </li>
+      </ul> 
+       
+        
+
+      </td>
       <td></td>
     </tr>
     <tr>
         <td>Correctness</td>
         <td></td>
   
-        <td></td>
+        <td><ul><li>Positive Predictive Value </li><li>Unlikely Combinations of Age & Specific Procedures</li></ul>
+          
+      </td>
         <td></td>
       </tr>
       <tr>
         <td>Currency</td>
-        <td></td>
+        <td>Currency was often referred to in the literature as timeliness or recency        </td>
   
-        <td></td>
+        <td>Data were considered current if they were recorded in the EHR within a reasonable period of time following measurement or, alternatively, if they were representative of the patient state at a desired time of interest. In all four articles, currency was assessed through the review of data entry logs. In three of the four, researchers reviewed whether desired data were entered into the EHR within a set time limit.3646 52 In the fourth, researchers considered whether each type of data element was measured recently enough to be considered medically relevant.84
+        </td>
         <td></td>
       </tr>
       <tr>
@@ -57,7 +82,9 @@
         <td>Concordance</td>
         <td></td>
   
-        <td></td>
+        <td>Data were considered concordant when there was agreement or compatibility between data elements. This may mean that two elements recording the same information for a single patient have the same value, or that elements recording different information have values that make sense when considered together (eg, biological sex is recorded as female, and procedure is recorded as gynecological examination).
+
+        </td>
         <td></td>
       </tr>
       <tr>
@@ -71,23 +98,26 @@
         <td>Plausability</td>
         <td></td>
   
-        <td></td>
-        <td></td>
+        <td> looking for elements with values that were outside biologically plausible ranges or that changed implausibly over time or zero-valued elements
+          Other researchers compared distributions of data values between practices or with national rates or looked at agreement between related elements
+        </td>
+        <td>=concordance?correctness?</td>
       </tr>
       <tr>
         <td>Availability</td>
         <td></td>
   
-        <td></td>
+        <td>xxxx</td>
         <td></td>
       </tr>
       <tr>
         <td>Credibility</td>
         <td></td>
   
-        <td></td>
+        <td>xxx</td>
         <td></td>
       </tr>
+    </tbody>
   </table>
 </body>
 </html>
